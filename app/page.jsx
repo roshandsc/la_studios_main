@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-export default function Layout({ children }) {
+export default function Page() {
   const [isMobile, setIsMobile] = React.useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
@@ -87,9 +87,6 @@ export default function Layout({ children }) {
           </div>
         )}
       </header>
-
-      {/* ----------- Page Dynamic Content ----------- */}
-      {children}
 
       {/* ---------------- FOOTER ---------------- */}
       <footer className="lc-footer">
